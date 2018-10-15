@@ -1,14 +1,12 @@
 package com.zzframework.core;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.lang.Nullable;
-import org.springframework.util.ClassUtils;
 import org.springframework.util.ReflectionUtils;
+
+import com.zzframework.lang.Nullable;
 
 public final class BridgeMethodResolver {
 
@@ -61,5 +59,35 @@ public final class BridgeMethodResolver {
 		}
 		Method previowsMethod = null;
 		boolean sameSig = true;
+		for (Method candidateMethod : candidatesMethod) {
+			
+		}
+	}
+	
+	static boolean isBridgeMethodFor(Method bridgeMethod, Method candidateMethod, Class<?> declaringClass) {
+		
+	}
+	
+	private static boolean isResolvedTypeMatch(Method genericMethod, Method candidateMethod, Class<?> declaringClass) {
+		
+	}
+	
+	@Nullable
+	private static Method findGenericDeclaration(Method bridgeMethod) {
+		
+	}
+	
+	private static Method searchInterfaces(Class<?>[] interfaces, Method bridgeMethod) {
+		for (Class<?> ifc : interfaces) {
+			
+		}
+	}
+	
+	private static Method searchForMatch(Class<?> type, Method bridgeMethod) {
+		
+	}
+	
+	public static boolean isVisibilityBridgeMethodPair(Method bridgeMethod, Method bridgeMethod) {
+		
 	}
 }
